@@ -1,0 +1,2 @@
+# percentages
+My percentages page
