@@ -1,0 +1,18 @@
+<?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+date_default_timezone_set('America/New_York');
+
+$today = new DateTime();
+$startdate = new DateTime("2016-01-01");
+$enddate = new DateTime("2016-12-31");
+
+$diff_total = $enddate->diff($startdate)->format("%a");
+$diff_today = $today->diff($startdate)->format("%a");
+$percentage_date = round(($diff_today/$diff_total)*100,2);
+
+echo 'This year is '.$percentage_date.'% over.';
+?>
