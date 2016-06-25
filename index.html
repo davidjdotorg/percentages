@@ -15,4 +15,24 @@ $diff_today = $today->diff($startdate)->format("%a");
 $percentage_date = round(($diff_today/$diff_total)*100,2);
 
 echo 'This year is '.$percentage_date.'% over.';
+
+$startdate = new DateTime("2016-06-01");
+$enddate = new DateTime("2046-06-30");
+
+$diff_total = $enddate->diff($startdate)->format("%a");
+$diff_today = $today->diff($startdate)->format("%a");
+$percentage_date = round(($diff_today/$diff_total)*100,2);
+
+echo "<br><br>";
+echo 'I am '.$percentage_date.'% complete with my mortgage payments.';
+
+$startdate = new DateTime("1967-12-10");
+$enddate = new DateTime("2050-07-12");
+
+$diff_total = $enddate->diff($startdate)->format("%a");
+$diff_today = $today->diff($startdate)->format("%a");
+$percentage_date = round(($diff_today/$diff_total)*100,2);
+
+echo "<br><br>";
+echo "According to death-clock.org, my life is ".$percentage_date."% over.";
 ?>
