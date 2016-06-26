@@ -1,0 +1,28 @@
+	body,div {
+		background-color:black;
+		font-family: Helvetica,Arial,Verdana;
+	}
+	.content
+	{
+		overflow:hidden;
+		float:right;
+		width:200px;
+		border:1px solid black;
+		-moz-border-radius: 10px;
+		border-radius:5px;
+		height:auto;
+		margin:.5em;
+		background-color:lightYellow;
+		padding:.5em;
+		font-size:1.4em;
+	}
+	.theHeading {
+		width:100%;
+		height:auto;
+		background-color:red;
+		text-align:center;
+		font-size:3em;
+		color:white;
+		-moz-border-radius:10px;
+		border-radius:5px;
+		}
